@@ -1,4 +1,5 @@
 import React from "react"
+
 import { Link } from "gatsby"
 
 const Navbar = () => {
@@ -8,13 +9,13 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <link to="/about">Our Company</link>
+            <Link to="/about">Our Company</Link>
           </li>
           <li>
-            <link to="/locations">Locations</link>
+            <Link to="/locations">Locations</Link>
           </li>
           <li>
-            <link to="/contact">Contact</link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
