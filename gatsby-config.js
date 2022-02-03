@@ -3,11 +3,15 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -15,5 +19,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-emotion`,
   ],
 }
