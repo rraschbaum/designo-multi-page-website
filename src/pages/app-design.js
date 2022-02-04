@@ -1,7 +1,13 @@
 import React from "react"
 
+import Layout from "../components/Layout"
+
 const AppDesignPage = () => {
-  return <h1>Hello from App Design Page</h1>
+  return (
+    <Layout>
+      <h1>Hello from App Design Page</h1>
+    </Layout>
+  )
 }
 
 export default AppDesignPage
